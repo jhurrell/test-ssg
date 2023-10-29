@@ -4,8 +4,10 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "dev": "nuxt dev --dotenv .env",
+    "staging": "nuxt dev --dotenv .env.test",
+    "production": "nuxt dev --dotenv .env.prod",
+    "generate": "nuxt generate --dotenv .env.prod",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },

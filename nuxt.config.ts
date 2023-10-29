@@ -1,5 +1,3 @@
-import { GlobalSettings } from "~/environmentSettings"
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	css: [
@@ -18,6 +16,16 @@ export default defineNuxtConfig({
 			tailwindcss: {},
 			autoprefixer: {},
 		},
+	},
+	runtimeConfig: {
+		apiSecret: "123456",
+		public: {
+			siteEnvironment: process.env.SITE_ENVIRONMENT,
+			supportEmail: process.env.SUPPORT_EMAIL,
+		},
+		app: {
+			hello: "World",
+		}
 	},
 	app: {
 		head: {
