@@ -1,11 +1,12 @@
 <template>
   <head>
-    <Title>Home</Title>
-  </head>
+    <Title>The Team</Title>
+  </head>  
   <div>
-    <h1>Index</h1>
+    The Team
   </div>
 </template>
 
 <script lang="ts" setup>
+
 </script>
