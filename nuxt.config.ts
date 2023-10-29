@@ -9,7 +9,6 @@ export default defineNuxtConfig({
 	modules: [
 		// ...
 		'@pinia/nuxt',
-		'@nuxt/content',
 	],
 	postcss: {
 		plugins: {
