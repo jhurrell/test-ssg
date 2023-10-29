@@ -1,8 +1,8 @@
 <template>
   <head>
-    <Title>{{ data?.title }}</Title>
-    <Meta name="description" :content="data?.description" />
-    <Meta name="keywords" :content="data?.keywords" />
+    <Title>Azure Tutorial</Title>
+    <Meta name="description" content="Following a tutorial that eventually will teach how to code and deploy an Azure Function" />
+    <Meta name="keywords" content="youtube, tutorial, azure, function, nuxt" />
   </head>
   <div>
     <h1>Home</h1>
