@@ -1,11 +1,14 @@
 <template>
   <head>
-    <Title>Home</Title>
+    <Title>{{ data?.title }}</Title>
+    <Meta name="description" :content="data?.description" />
+    <Meta name="keywords" :content="data?.keywords" />
   </head>
   <div>
-    <h1>Index</h1>
+    <ContentDoc />    
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
+const { data } = await useAsyncData('index', () => queryContent('/').findOne())
 </script>
